@@ -25,7 +25,7 @@ steps:
   settings:
     repo: ikaruswill/redis-sentinel
     build_args:
-    - VERSION=${DRONE_TAG:-latest}
+    - VERSION=${DRONE_TAG:-alpine}
     auto_tag: true
     auto_tag_suffix: linux-arm64
     username:
@@ -68,7 +68,7 @@ steps:
   settings:
     repo: ikaruswill/redis-sentinel
     build_args:
-    - VERSION=${DRONE_TAG:-latest}
+    - VERSION=${DRONE_TAG:-alpine}
     auto_tag: true
     auto_tag_suffix: linux-amd64
     username:
